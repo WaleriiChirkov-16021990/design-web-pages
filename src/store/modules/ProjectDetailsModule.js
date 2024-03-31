@@ -10,15 +10,15 @@ export default {
     sliderPictures: [
       { src: ('../assets/img/projectDetails/project_details_slider1.png'), alt: 'slider pic' },
       { src: ('../assets/img/projectDetails/project_details_slider2.png'), alt: 'slider pic' },
-      { src: ('../assets/img/projectDetails/project_details_slider3.png'), alt: 'slider pic' },
+      { src: ('../assets/img/projectDetails/project_details_slider3.png'), alt: 'slider pic' }
     ]
   },
   getters: {
-    getProjectInfo(state){
-      return state.projectInfo;
+    getProjectInfo (state) {
+      return state.projectInfo
     },
-    getSliderPictures(state){
-      return state.sliderPictures;
-    },
+    getSliderPictures (state) {
+      return state.sliderPictures
+    }
   }
 }

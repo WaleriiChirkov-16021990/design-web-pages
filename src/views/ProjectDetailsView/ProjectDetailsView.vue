@@ -16,11 +16,10 @@
     </div>
 </template>
 
-<script src="./_ProjectDetailsView.js" lang="js">
-import { mapGetters } from 'vuex';
-import SliderComp from '@/components/SliderComp.vue';
-import '@/assets/css/styleViews/project_details_view.css';
-
+<script>
+import { mapGetters } from 'vuex'
+import SliderComp from '@/components/SliderComp.vue'
+import '@/assets/css/styleViews/project_details_view.css'
 
 export default {
   name: 'ProjectDetailsView',
@@ -28,7 +27,7 @@ export default {
   components: {
     SliderComp
   },
-  computed: mapGetters(['getProjectInfo', 'getSliderPictures']),
+  computed: mapGetters(['getProjectInfo', 'getSliderPictures'])
 }
 </script>
-<style src="./_ProjectDetailsView.scss" lang="scss" scoped></style>
+<style ></style>

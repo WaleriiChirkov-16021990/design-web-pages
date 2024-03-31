@@ -13,10 +13,10 @@ export default {
       {
         id: 'fourth-project', src: require('../../assets/img/home/project-photo4.jpg'), alt: 'fourth project', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture'
       }
-    ],
+    ]
   },
   getters: {
-    getListOfProjects(state) {
+    getListOfProjects (state) {
       return state.listOfProjects
     }
   }

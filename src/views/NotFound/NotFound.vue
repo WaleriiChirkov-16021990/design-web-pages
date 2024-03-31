@@ -15,9 +15,9 @@
     </div>
 </template>
 
-<script src="./_NotFound.js" lang="js">
-import BlackButtonComp from '@/components/BlackButtonComp.vue';
-import '@/assets/css/styleViews/not_found.css';
+<script >
+import BlackButtonComp from '@/components/BlackButtonComp.vue'
+import '@/assets/css/styleViews/not_found.css'
 
 export default {
 
@@ -27,7 +27,7 @@ export default {
     BlackButtonComp
   },
 
-  data() {
+  data () {
     return {
       buttonText: 'Back To Home',
       link: '/',
@@ -35,12 +35,12 @@ export default {
         {
           title: '404',
           text: 'We are sorry, but the page you requested was not found',
-          src: require('../assets/img/notFound/not_found_img.png'),
-          alt: "not-found picture"
+          src: require('@/assets/img/notFound/not_found_img.png'),
+          alt: 'not-found picture'
         }
       ]
-    };
-  },
-};
+    }
+  }
+}
 </script>
-<style src="./_NotFound.scss" lang="scss" scoped></style>
+<style ></style>

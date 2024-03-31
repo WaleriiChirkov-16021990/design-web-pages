@@ -1,6 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+// import HomeView from '../views/HomeView.vue'
+import BlogView from '@/views/BlogView/BlogView.vue'
+import HomeView from '@/views/HomeView/HomeView.vue'
+import BlogDetailsView from '@/views/BlogDetailsView/BlogDetailsView.vue'
+import ProjectView from '@/views/ProjectView/ProjectView.vue'
+import ProjectDetailsView from '@/views/ProjectDetailsView/ProjectDetailsView.vue'
+import NotFound from '@/views/NotFound/NotFound.vue'
 
 Vue.use(VueRouter)
 
@@ -50,7 +56,7 @@ const routes = [
     path: '*',
     name: '404',
     component: NotFound
-  },
+  }
 ]
 
 const router = new VueRouter({

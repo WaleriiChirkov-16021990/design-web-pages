@@ -12,8 +12,8 @@
 </template>
 
 <script>
-import HeaderComp from "@/components/HeaderComp";
-import FooterComp from "@/components/FooterComp";
+import HeaderComp from '@/components/HeaderComp'
+import FooterComp from '@/components/FooterComp'
 export default {
   name: 'App',
   components: {
@@ -24,5 +24,4 @@ export default {
 </script>
 
 <style lang="scss">
-
 </style>

@@ -1,0 +1,40 @@
+
+.not-found {
+    margin-bottom: 200px;
+}
+.not-found__content {
+    display: grid;
+    grid-template-columns: 569px 913px;
+    -moz-column-gap: 81px;
+    column-gap: 81px;
+}
+.not-found__content_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.not-found__title {
+    color: #CDA274;
+    font-family: " DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250px;
+    line-height: 1.25;
+    margin: 0;
+    margin-bottom: 15px;
+}
+.not-found__text {
+    color: #292F36;
+    font-family: " DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1.5;
+    letter-spacing: 0.35px;
+    margin: 0;
+    margin-bottom: 23px;
+}
+.not-found__image {
+    width: 100%;
+}

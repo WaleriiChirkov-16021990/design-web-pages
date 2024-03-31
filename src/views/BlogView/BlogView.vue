@@ -53,11 +53,10 @@
 </template>
 
 <script>
-import BlogArticleCardComp from '../components/BlogArticleCardComp.vue';
-import PaginationComp from '../components/PaginationComp.vue';
-import { mapGetters } from 'vuex';
+import BlogArticleCardComp from '@/components/BlogArticleCardComp.vue'
+import PaginationComp from '@/components/PaginationComp.vue'
+import { mapGetters } from 'vuex'
 import '@/assets/css/styleViews/blog_view.css'
-
 
 export default {
   name: 'BlogView',
@@ -66,35 +65,35 @@ export default {
     BlogArticleCardComp,
     PaginationComp
   },
-  data() {
+  data () {
     return {
       currentPage: 1,
-      limitOfCardsPerPage: 6,
-    };
+      limitOfCardsPerPage: 6
+    }
   },
   methods: {
-    setTotalNumberOfPages() {
-      return Math.ceil(this.getListOfCards.length / this.limitOfCardsPerPage);
+    setTotalNumberOfPages () {
+      return Math.ceil(this.getListOfCards.length / this.limitOfCardsPerPage)
     },
-    paginateListOfCards(listOfCards) {
-      let page = this.currentPage;
-      let perPage = this.limitOfCardsPerPage;
-      let from = (page * perPage) - perPage;
-      let to = (page * perPage);
-      return listOfCards.slice(from, to);
+    paginateListOfCards (listOfCards) {
+      const page = this.currentPage
+      const perPage = this.limitOfCardsPerPage
+      const from = (page * perPage) - perPage
+      const to = (page * perPage)
+      return listOfCards.slice(from, to)
     },
-    changeCurrentPage(page) {
+    changeCurrentPage (page) {
       console.log(page)
-      this.currentPage = page;
+      this.currentPage = page
     }
   },
   computed: {
     ...mapGetters(['getListOfCards', 'getlistOfLatestPosts']),
-    displayedCards() {
-      return this.paginateListOfCards(this.getListOfCards);
+    displayedCards () {
+      return this.paginateListOfCards(this.getListOfCards)
     }
   }
-};
+}
 </script>
 
 <style>

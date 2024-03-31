@@ -76,9 +76,9 @@
       </div>
 </template>
 
-<script src="./_ProjectView.js" lang="js">
-import PaginationComp from '../components/PaginationComp.vue';
-import { mapGetters } from 'vuex';
+<script>
+import PaginationComp from '@/components/PaginationComp.vue'
+import { mapGetters } from 'vuex'
 import '@/assets/css/styleViews/project_view.css'
 
 export default {
@@ -87,41 +87,39 @@ export default {
     PaginationComp
   },
 
-  data() {
+  data () {
     return {
       currentPage: 1,
       limitOfCardsPerPage: 8,
 
       currentCategoryList:
         [
-          { id: '65', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '66', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen2.png'), alt: 'kitchen two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '67', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen3.png'), alt: 'kitchen three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '68', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen4.png'), alt: 'kitchen four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '69', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen5.png'), alt: 'kitchen five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '70', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen6.png'), alt: 'kitchen six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '71', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen7.png'), alt: 'kitchen seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '72', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen8.png'), alt: 'kitchen eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '65', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen1.png'), alt: 'kitchen one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '66', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen2.png'), alt: 'kitchen two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '67', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen3.png'), alt: 'kitchen three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '68', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen4.png'), alt: 'kitchen four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '69', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen5.png'), alt: 'kitchen five', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '70', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen6.png'), alt: 'kitchen six', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '71', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen7.png'), alt: 'kitchen seven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '72', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen8.png'), alt: 'kitchen eight', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
 
+          { id: '73', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen1.png'), alt: 'kitchen nine', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '74', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen2.png'), alt: 'kitchen ten', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '75', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen1.png'), alt: 'kitchen eleven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '76', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen2.png'), alt: 'kitchen twelve', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '77', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen2.png'), alt: 'kitchen thirteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '78', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen1.png'), alt: 'kitchen fourteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '79', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen2.png'), alt: 'kitchen fifteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '80', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen1.png'), alt: 'kitchen sixteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
 
-          { id: '73', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen1.png'), alt: 'kitchen nine', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '74', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen2.png'), alt: 'kitchen ten', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '75', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen1.png'), alt: 'kitchen eleven', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '76', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen2.png'), alt: 'kitchen twelve', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '77', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen2.png'), alt: 'kitchen thirteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '78', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen1.png'), alt: 'kitchen fourteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '79', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen2.png'), alt: 'kitchen fifteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '80', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen1.png'), alt: 'kitchen sixteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-
-
-          { id: '81', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen3.png'), alt: 'kitchen seventeen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '82', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen4.png'), alt: 'kitchen eighteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '83', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen3.png'), alt: 'kitchen nineteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '84', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen4.png'), alt: 'kitchen twenty', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '85', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen4.png'), alt: 'kitchen twenty-one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '86', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen3.png'), alt: 'kitchen twenty-two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '87', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen4.png'), alt: 'kitchen twenty-three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
-          { id: '88', tag: 'kitchen', src: require('../assets/img//project/projects_kitchen3.png'), alt: 'kitchen twenty-four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '81', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen3.png'), alt: 'kitchen seventeen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '82', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen4.png'), alt: 'kitchen eighteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '83', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen3.png'), alt: 'kitchen nineteen', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '84', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen4.png'), alt: 'kitchen twenty', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '85', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen4.png'), alt: 'kitchen twenty-one', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '86', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen3.png'), alt: 'kitchen twenty-two', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '87', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen4.png'), alt: 'kitchen twenty-three', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' },
+          { id: '88', tag: 'kitchen', src: require('@/assets/img//project/projects_kitchen3.png'), alt: 'kitchen twenty-four', firstparagraph: 'Modern Kitchen', secondparagraph: 'Decor / Artchitecture' }
         ],
 
       listOfButtons:
@@ -131,53 +129,52 @@ export default {
           { id: 'kitchen', title: 'Kitchen' },
           { id: 'livingroom', title: 'LivingArea' }
         ],
-      buttonIsActive: 'kitchen',
-    };
+      buttonIsActive: 'kitchen'
+    }
   },
   methods: {
-    setTotalNumberOfPages() {
-      return Math.ceil(this.currentCategoryList.length / this.limitOfCardsPerPage);
+    setTotalNumberOfPages () {
+      return Math.ceil(this.currentCategoryList.length / this.limitOfCardsPerPage)
     },
-    paginateListOfCards(currentCategoryList) {
-      const newList = currentCategoryList;
-      console.log(newList);
-      let page = this.currentPage;
-      let perPage = this.limitOfCardsPerPage;
-      let from = (page * perPage) - perPage;
-      let to = (page * perPage);
-      return newList.slice(from, to);
+    paginateListOfCards (currentCategoryList) {
+      const newList = currentCategoryList
+      console.log(newList)
+      const page = this.currentPage
+      const perPage = this.limitOfCardsPerPage
+      const from = (page * perPage) - perPage
+      const to = (page * perPage)
+      return newList.slice(from, to)
     },
-    changeCurrentPage(page) {
+    changeCurrentPage (page) {
       console.log(page)
-      this.currentPage = page;
+      this.currentPage = page
     },
-    changeCurrentCategoryList(id) {
-      const buttonId = id;
-      this.currentCategoryList = [];
+    changeCurrentCategoryList (id) {
+      const buttonId = id
+      this.currentCategoryList = []
       this.getAllCategoriesList.forEach(category => {
         if (category.tag === buttonId) {
-          this.buttonIsActive = buttonId;
-          return this.currentCategoryList.push(category);
+          this.buttonIsActive = buttonId
+          return this.currentCategoryList.push(category)
         }
-
-      });
+      })
     },
-    changeStarColor(e) {
-      const star = e.target.closest('.star');
+    changeStarColor (e) {
+      const star = e.target.closest('.star')
       this.currentCategoryList.forEach((project) => {
         if (star.id === project.id) {
-          star.classList.toggle('star_active');
+          star.classList.toggle('star_active')
         }
-      });
-    },
+      })
+    }
   },
   computed: {
-    displayedCards() {
-      return this.paginateListOfCards(this.currentCategoryList);
+    displayedCards () {
+      return this.paginateListOfCards(this.currentCategoryList)
     },
-    ...mapGetters(['getAllCategoriesList', 'getCurrentCategoryList']),
+    ...mapGetters(['getAllCategoriesList', 'getCurrentCategoryList'])
 
   }
-};
+}
 </script>
-<style src="./_ProjectView.scss" lang="scss" scoped></style>
+<style ></style>

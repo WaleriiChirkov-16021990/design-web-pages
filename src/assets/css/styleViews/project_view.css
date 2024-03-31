@@ -1,0 +1,212 @@
+
+.center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+
+.projects-intro {
+    margin-bottom: 200px;
+}
+.projects-intro__content {
+    background-image: url("@/assets/img/project/project_banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.projects-intro__title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 503px;
+    padding: 41px 78px;
+    border-radius: 37px 37px 0px 0px;
+    background: #FFF;
+    max-width: 503px;
+    margin-top: 178px;
+}
+.projects-intro__heading {
+    color: #292F36;
+    font-family: " DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.25;
+    margin: 0;
+}
+.projects-intro__breadcrumbs {
+    margin: 0;
+    padding: 0;
+}
+.projects-intro__breadcrumbs-item {
+    display: inline-block;
+    align-items: center;
+}
+.projects-intro__breadcrumbs-item:not(:last-child)::after {
+    content: "/";
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.projects-intro__breadcrumbs-link {
+    color: #4D5053;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    transition: all 0.5s ease-out;
+}
+.projects-intro__breadcrumbs-link:hover {
+    color: #CDA274;
+    transition: all 0.8s ease-out;
+}
+.projects-intro__breadcrumbs-link:active {
+    color: #4D5053;
+    transition: all 0.8s ease-out;
+}
+.projects-intro__breadcrumbs-link:focus {
+    color: #CDA274;
+    transition: all 0.8s ease-out;
+}
+
+
+.projects {
+    margin-bottom: 200px;
+}
+.projects__items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-height: 3230px;
+    margin-bottom: 61px;
+}
+.projects__item {
+    position: relative;
+}
+.projects__item-image {
+    display: flex;
+    max-width: 585px;
+}
+.projects__item-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 22px;
+}
+.projects__item-box {
+    display: flex;
+    min-width: 290px;
+    height: 70px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    align-content: flex-start;
+    justify-content: flex-end;
+}
+.projects__item-title {
+    color: #292F36;
+    font-family: " DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+.projects__item-subtitle {
+    color: #4D5053;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    margin: 0;
+}
+.projects__item-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    background-color: #F4F0EC;
+    cursor: pointer;
+    transition: all 0.8s ease-out;
+    padding: 0;
+}
+.projects__item-button:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    transition: all 0.8s ease-out;
+}
+.projects__item-button:active {
+    background-color: #4D5053;
+    border: none;
+    transition: all 0.8s ease-out;
+}
+.projects__item-button:focus {
+    background-color: #CDA274;
+    border: none;
+    transition: all 0.8s ease-out;
+}
+
+
+.star-box {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.star_active path {
+    fill: #FFA928;
+}
+
+
+.categories__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    border-radius: 18px;
+    border: 1px solid #CDA274;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 61px;
+}
+
+
+.categories__btn {
+    color: #292F36;
+    font-family: "Jost", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.25;
+    text-align: center;
+    letter-spacing: 0.36px;
+    border: none;
+    border-radius: 18px;
+    background-color: #FFFFFF;
+    padding: 26px 66px;
+    width: 230px;
+}
+.categories__btn:hover {
+    background-color: #CDA274;
+}
+.categories__btn:focus {
+    color: #FFFFFF;
+    background-color: #292F36;
+}
+.categories__btn_active {
+    color: #FFFFFF;
+    background-color: #292F36;
+}

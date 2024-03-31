@@ -66,10 +66,10 @@
     </div>
 </template>
 
-<script src="./_HomeView.js" lang="js">
-import ArticleCardComp from '../components/ArticleCardComp.vue'
-import BlackButtonComp from '../components/BlackButtonComp.vue';
-import { mapGetters } from 'vuex';
+<script>
+import ArticleCardComp from '@/components/ArticleCardComp.vue'
+import BlackButtonComp from '@/components/BlackButtonComp.vue'
+import { mapGetters } from 'vuex'
 import '@/assets/css/styleViews/home_view.css'
 
 export default {
@@ -80,7 +80,7 @@ export default {
     BlackButtonComp
   },
 
-  data() {
+  data () {
     return {
       buttonText: 'Get Started',
       link: '/project',
@@ -99,13 +99,13 @@ export default {
         {
           id: 'fourth-counter', number: '95', text: 'Happy Customers'
         }
-      ],
-    };
+      ]
+    }
   },
 
   computed: {
     ...mapGetters(['getListOfProjects'])
-  },
-};
+  }
+}
 </script>
-<style src="./_HomeView.scss" lang="scss" scoped></style>
+<style></style>

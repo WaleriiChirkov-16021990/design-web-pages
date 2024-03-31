@@ -1,0 +1,52 @@
+
+.project-details__intro {
+    margin-bottom: 200px;
+}
+.project-details__intro-content {
+    background-image: url("@/assets/img/projectDetails/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 356px;
+}
+.project-details__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-details__heading {
+    color: #292F36;
+    font-family: " DM Serif Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    margin: 0;
+    margin-bottom: 11px;
+}
+.project-details__text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    max-width: 658px;
+    margin-bottom: 100px;
+}
+.project-details__text {
+    color: #4D5053;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 0.22px;
+    margin: 0;
+}
+.project-details__image {
+    width: 100%;
+}
